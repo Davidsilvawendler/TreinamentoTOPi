@@ -28,7 +28,7 @@ public virtual with sharing class AccountTH extends TriggerHandler{
 
 
     override
-    public void beforeUpdate (){
+    public void beforeUpdate(){
         validateDocumentNumber ();
     }
 
