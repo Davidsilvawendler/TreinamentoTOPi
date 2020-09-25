@@ -3,11 +3,16 @@ import {ShowToastEvent} from 'lightning/plataformShowToastEvent';
  
 export default class NewCase extends LightningElement {
 
-    handleSucess (event){
 
-        const toast = new ShowToastEvent{
-            title: 'Case Sucess Created';
-            Message: 'Caso Criado com sucesso';
-        }
+    handleSuccess (event) {
+
+        const toast = new ShowToastEvent({
+            title: 'Case Success Created',
+            message: 'Caso criado com sucesso!!!! ;)'
+        });
+        
+        this.dispatchEvent(toast);
+
     }
+
 }
